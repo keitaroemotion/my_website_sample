@@ -1,0 +1,39 @@
+<html>
+<head><title>Merchant Site</title></head>
+<h3 class="pad">Select Convenient Store </h3>
+<p class="pad">
+<%= image_tag "logo.png", width: 120 %> 
+</p>
+
+<% list = ["Seven Eleven", "Ministop", "Lawson"]  %>
+<body>
+<ul class="pad"> 
+<% list.each do |c| %>
+<li><h5><a href = ""><%= c  %></a></h5></li>
+<% end %>
+</ul>
+</body>
+</html>
+
+<style>
+  body {
+    background-color: white;
+    font-family:      Sans-serif;
+  }
+
+  .pad {
+    background-size:  100px 100px;
+    font-size:        20px;
+    font-family:      Sans-serif;
+    position:         relative;
+    left:             330px;
+  }
+
+  .pad2 {
+    background-color: white;
+    background-size:  100px 100px;
+    font-size:        16px;
+    font-family:      Sans-serif;
+    position:         relative;
+} 
+<style>
